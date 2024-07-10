@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="vi">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/frontend/theme_1/lib/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/frontend/theme_1/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/frontend/theme_1/css/main810d.css?v=1720366581">
+
+    <!-- chính -->
+
+    <!-- phụ -->
+    <link rel="stylesheet" href="assets/frontend/theme_1/css/trung/notify810d.css?v=1720366581">
+
+    <!-- phụ -->
+
+    <link rel="stylesheet" href="new/body.css">
+
+    <link rel="stylesheet" href="https://nick.vn/assets/frontend/theme_1/css/dichvunoibat.css?v=1720366806">
+
+
+
+
+</head>
+
+<body>
+    <div class>
+        <header>
+            <div class="nav-bar">
+                <div class="nav-bar-container container" style="max-width: 1200px">
+                    <div class="nav-bar-brand">
+                        <a href="index.html">
+                            <img src="image/LOGO-NICK-VN.png" alt>
+                        </a>
+                    </div>
+                    <div class="nav-bar-category">
+                        <ul class="nav">
+                            <li class="menu-item">
+                                <a href="index.html">Trang chủ</a>
+                                <ul class="sub-menu">
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="login.html">Nạp tiền</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="login.html" class="\">Nạp thẻ</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="login.html" class="\">Nạp tiền ATM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="mua-acc.html">Mua Acc</a>
+                                <ul class="sub-menu">
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="dich-vu.html">Dịch Vụ</a>
+                                <ul class="sub-menu">
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="mua-the.html">Mua thẻ</a>
+                                <ul class="sub-menu">
+                                </ul>
+                            </li>
+                            <li class="menu-item notification_papa">
+                                <a href="javascript:void(0)" class="box-notify">
+                                    <img class="notify_ring_img" src="image/nam/ring.svg" alt>
+                                    <p id="num-notification">
+                                    </p>
+                                </a>
+                                <div class="notify_menu notify_active">
+                                    <div class="notify_menu_header d-flex justify-content-between align-items-center">
+                                        <div>
+                                            Thông báo
+                                        </div>
+                                        <div>
+                                            <img src="image/nam/profile_close.svg" alt class="close-notification-popup c-mr-12">
+                                        </div>
+                                    </div>
+                                    <div class="notify_menu_body">
+                                        <div class="notification_type c-ml-14 c-mr-14 c-mt-8 c-pb-4 d-flex">
+                                            <div class="notification_type_item">
+                                                <span class="tag c-ml-4" data-id="1">
+Hệ thống/Event
+<div class="num-notification-none num-notification-inner num-notification-inner_1 c-ml-4">
+</div>
+</span>
+                                            </div>
+                                            <div class="notification_type_item">
+                                                <span class="tag c-ml-4" data-id="2">
+Giao dịch
+<div class="num-notification-none num-notification-inner num-notification-inner_2 c-ml-4">
+</div>
+</span>
+                                            </div>
+                                        </div>
+                                        <div class="notify_content_layout">
+                                            <div id="result-notification" class="notify_content ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify_menu_seeMore">
+                                        <span>Xem thêm</span>
+                                        <img src="image/nam/notification_down.png" alt>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="nav-bar-brand">
+                            <a href="index.html">
+                                <img src="image/LOGO-NICK-VN.png" alt>
+                            </a>
+                        </div>
+                        <form action id="formProfile">
+                            <input type="hidden" name="_token" value="kWGlRMOleIhy24mlnbEJieo4MOefmtNDW4ykGo2w"> <input type="hidden" name="user_id" id="user_id" value>
+                        </form>
+                        <ul class="nav">
+                            <li class="nav-log-in">
+                                <a href="#" id="info" rel="nofollow">Đăng nhập</a>
+                            </li>
+                            <li class="nav-log-in">
+                                <a href="#" id="logout">Đăng ký</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="nav-bar-category-mobile " style="gap:10px">
+                        <div href="#" class="box-notify">
+                            <img class="notify_ring_img" src="image/nam/ring.svg" alt>
+                            <p id="num-notification_mobile">
+                            </p>
+                        </div>
+                        <span>
+<a href="#" id="info_mobile" rel="nofollow">
+<div class="loading"></div>
+</a>
+</span>
+                        <nav class="notify_mobile">
+                            <ul class="notify_mobile_header">
+                                <div>
+                                    Thông báo
+                                </div>
+                                <div>
+                                    <img src="image/nam/profile_close.svg" alt class="close-notification-popup c-mr-12">
+                                </div>
+                            </ul>
+                            <ul class="notify_mobile_body">
+                                <li class="notification_type_mobile c-ml-14 c-mr-14 c-mt-8 c-pb-4">
+                                    <span class="tag c-ml-4" data-id="1">
+Hệ thống/Event
+<v class=" num-notification-inner num-notification-inner_1 c-ml-4">
+</v>
+</span>di
+                                    <span class="tag c-ml-4" data-id="2">
+Giao dịch
+<div class=" num-notification-inner num-notification-inner_2 c-ml-4">
+</div>
+</span>
+                                </li>
+                                <li class="notify_content_layout">
+                                    <div id="result-notification_mobile" class="notify_content">
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="notify_menu_seeMore">
+                                Xem thêm
+                                <img src="image/nam/notification_down.png" alt>
+                            </ul>
+                        </nav>
+                        <label class="nav-bar-category-mobile-input" for="nav_mobile_input" style="margin-bottom: 1.75rem!important;"><i class="fas fa-bars"></i></label>
+                        <input type="checkbox" hidden class="name_input" id="nav_mobile_input">
+                        <nav class="nav_mobile">
+                            <ul class>
+                                <li>
+                                    <a href="index.html">Trang chủ</a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menuchild_item_0">
+                                </ul>
+                                <li>
+                                    <a href="login.html">Nạp tiền</a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menuchild_item_2">
+                                    <li class="menu-item">
+                                        <a href="login.html">Nạp thẻ</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="login.html">Nạp tiền ATM</a>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <a href="mua-acc.html">Mua Acc</a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menuchild_item_4">
+                                </ul>
+                                <li>
+                                    <a href="dich-vu.html">Dịch Vụ</a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menuchild_item_5">
+                                </ul>
+                                <li>
+                                    <a href="mua-the.html">Mua thẻ</a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menuchild_item_6">
+                                </ul>
+                            </ul>
+                            <ul class>
+                                <li>
+                                    <a href="#" id="info_tab_mobile" rel="nofollow" class="nav_mobile-log-in">
+                                        <div class="loading"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="logout_tab_mobile" class="nav_mobile-log-in">
+                                        <div class="loading"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <form id="logout-form" action="https://nick.vn/ajax/logout" method="POST" class="d-none">
+                        <input type="hidden" name="_token" value="kWGlRMOleIhy24mlnbEJieo4MOefmtNDW4ykGo2w"> </form>
+                </div>
+            </div>
+        </header>
+        <div class="content" style>
+            <div class="log-in container">
+                <div class="log-in-body">
+                    <p>Đăng nhập hệ thống</p>
+                    <form action="" method="POST" id="form-login">
+                        <div class="login_error"></div>
+                        <input type="hidden" name="_token" value="kWGlRMOleIhy24mlnbEJieo4MOefmtNDW4ykGo2w">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tài khoản" name="username" required>
+                            <span><i class="fas fa-user"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" name="password" required>
+                            <span><i class="fas fa-lock"></i></span>
+                        </div>
+                        <div class="form-group" style="text-align: center">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="checkbox icheck">
+                                    <label>
+<input type="checkbox" name="remember_token" value="1">
+Ghi nhớ
+</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href>Quên mật khẩu</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary btn-block btn-flat" type="submit">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="social-auth">
+                        <p>- HOẶC -</p>
+                        <a class="btn  btn-social btn-facebook btn-flat d-inline-block" href="https://fb.tichhop.pro/nick_vn"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a class="btn  btn-social btn-discord btn-flat d-inline-block" href="https://fb.tichhop.pro/login/discord/nick_vn"><i class="fab fa-discord"></i> Discord</a>
+                        <a class="btn  btn-social btn-google btn-flat d-inline-block" href="https://fb.tichhop.pro/login/google/nick_vn"><i class="fab fa-google"></i> Google</a>
+                    </div>
+                    <div class="social-auth">
+                        <a class="btn  btn-social btn-zalo btn-flat d-inline-block" href="https://zalo.tichhop.pro/login/zalo/nick_vn"><img src="https://nick.vn/assets/frontend/theme_1/images/ic-zalo.png" class="wh-16"> Zalo</a>
+                        <a class="btn btn-register btn-flat d-inline-block" href="https://nick.vn/register"><i class="fas fa-key"></i> Đăng ký tài khoản</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show overflow-auto" id="rechargeModal" aria-modal="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered animated">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Nạp tiền</div>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" data-toggle="tab" href="#tab-modal-recharge" role="tab" aria-selected="true">Nạp thẻ</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tab-modal-atm" role="tab" aria-selected="false">ATM</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="tab-modal-recharge" role="tabpanel">
+                        <form action="" id="modal-form-charge">
+                            <input type="hidden" name="_token" value="kWGlRMOleIhy24mlnbEJieo4MOefmtNDW4ykGo2w">
+                            <div class="modal-body">
+                                <div class="t-sub-2 mb-2">Nhà cung cấp</div>
+                                <select name="type" class="form-control mb-fix-12" id="modal-telecom">
+
+</select>
+                                <div class="t-sub-2 mb-2 mt-2">Chọn mệnh giá</div>
+                                <div class="list-card-deno" id="modal-amounts">
+
+                                </div>
+                                <div class="t-sub-2 mb-2">Mã số thẻ</div>
+                                <input autocomplete="off" class="form-control input-form w-100 mb-fix-12" name="pin" type="text" placeholder="Nhập mã số thẻ" required>
+                                <div class="t-sub-2 mb-2 mt-2">Số seri</div>
+                                <input autocomplete="off" class="form-control input-form w-100 mb-fix-12" name="serial" type="text" placeholder="Nhập số seri thẻ" required>
+                                <div class="default-form-group mt-2 captchaShow">
+                                    <label class="text-form fw-600" style="font-weight: 600">Mã bảo vệ</label>
+                                    <div class="row p-0">
+                                        <div class="col-md-12 d-flex ">
+                                            <input class="form-control input-form w-100" name="captcha" type="text" placeholder="Nhập mã bảo vệ">
+                                            <div class="captcha ">
+                                                <span class="capchaImage">
+</span>
+                                            </div>
+                                            <button class="refresh-captcha" id="reloadModalCaptchaCharge" type="button">
+<img src="https://nick.vn/assets/frontend/theme_1/image/captcha_refresh.png" alt>
+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-invalid message-form mt-2"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary btn-big submit-modal-form-charge google_buy_charge" style="background: #32c5d2;border: 1px solid #32c5d2;">Nạp tiền</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="tab-modal-atm" role="tabpanel">
+                        <div class="modal-body">
+                            <form action>
+                                <div class="box-charge-card">
+                                    <div class="dialog--content mb-fix-20">
+                                        <div class="card--gray">
+                                            <div class="atm-child">
+                                                <table align="center" border="1" cellpadding="1" cellspacing="1" class="table table-bordered">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th colspan="2">Tên chủ tài khoản: Hoàng Thị Nguyệt &nbsp;</th>
+                                                            <th>Chi nhánh</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>ACB</strong></td>
+                                                            <th>40786177</th>
+                                                            <td><strong>Giang Văn Minh</strong></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p style="text-align:center"><img alt height="423" src="https://cdn3.upanh.info/upload/server-sw3/images/image(19).png" width="350" /><br/> Nếu sau 5 phút&nbsp;không được cộng tiền vui lòng&nbsp;liên hệ fanpage:&nbsp;<a href="https://nick.vn/"
+                                                        rel="nofollow" target="_blank"><u><strong>Chăm Sóc Khách Hàng</strong></u></a>&nbsp;hoặc Hotline&nbsp;<strong>0395.342.442</strong>&nbsp;để được xử lý.</p>
+                                            </div>
+                                            <div class="card--attr transfer-title justify-content-center">
+                                                <div class="card--attr__value d-flex">
+                                                    <div class="card__info transfer-code" id></div>
+                                                    <div class="icon--coppy js-copy-text" aria-describedby="tippy-7">
+                                                        <img src="https://nick.vn/assets/frontend/theme_1/image/icons/copy-black.png" alt>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-small" id="modalRuongQuanHuy" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content">
+                <div class=" j-img-ruongQuanHuy">
+                    <div class="modal-header justify-content-center">
+                        <img class="c-pt-20 c-pb-20" src="https://nick.vn/assets/frontend/theme_5/image/son/success.png" alt>
+                    </div>
+                </div>
+                <div class="modal-body text-center c-pl-24 c-pr-24 c-my-12 pt-0 pb-0">
+                    <p class="fw-700 fz-15 fz-lg-15 fz-md-14 fz-sm-12 mb-0 text-title-theme">Chúc mừng bạn đã mở trúng
+                    </p>
+                    <div class="j-quanhuy content-popup fw-400 fz-13 fz-lg-13 fz-md-12 fz-sm-11 c-mt-10 mb-0">
+                    </div>
+                </div>
+                <div class="modal-footer c-p-24">
+                    <button class="btn primary" data-dismiss="modal">Chơi tiếp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-small" id="orderSuccsesFlashSale">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center p-0">
+                    <img class="c-pt-20 c-pb-20" src="https://nick.vn/assets/frontend/theme_1/image/son/success.png" alt>
+                    <button type="button" class="close" data-dismiss="modal" style="right: 12px;top: 24px"></button>
+                </div>
+                <div class="modal-body body-successfully-sevice text-center c-pl-24 c-pr-24 pt-0 pb-0">
+                    <p class="fw-700 fz-15 c-mt-12 mb-0 text-title-theme">Gửi yêu cầu thuê thành công</p>
+                    <p class="fw-400 fz-13 c-mt-10 mb-0" id="modal-success-message"></p>
+                </div>
+                <div class="modal-footer c-mt-24 c-p-16 c-p-lg-12" style="--data-between: 12px">
+                    <a href="javascript:void(0);" class="d-none d-lg-block btn c-theme-btn c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-tab="1" data-dismiss="modal">Đóng</a>
+                    <a href="https://nick.vn/dich-vu-da-mua" class="btn primary">Lịch sử</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-328" id="orderFailedFlashSale">
+        <div class="modal-dialog modal-dialog-centered c-px-sm-16">
+            <div class="modal-content">
+                <div class="modal-body text-center c-p-0">
+                    <div class="banner">
+                        <img width="143" height="114" class src="https://nick.vn/assets/frontend/theme_1/image/trong/modal-failed.png" alt>
+                    </div>
+                    <p class="t-sub-1 title-color">Thanh toán thất bại</p>
+                    <span class="t-body-1 res-message" id="modal-failed-message">
+</span>
+                </div>
+                <div class="modal-footer group-btn c-mt-24" style="--data-between: 12px">
+                    <button type="button" class="btn c-theme-btn c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-big" id="orderModal">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content c-p-24 data_flash_sale_service">
+            </div>
+        </div>
+    </div>
+    <div class="step" id="step2">
+    </div>
+    <div id="m_scroll_top" class="m-scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="fb-container">
+        <a href="https://www.facebook.com/profile.php?id=100090900511627" target="_blank">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center align-items-center fb-svg">
+                    <svg width="36" height="36" viewBox="0 0 36 36">
+<path fill="white" d="M1 17.99C1 8.51488 8.42339 1.5 18 1.5C27.5766 1.5 35 8.51488 35 17.99C35 27.4651 27.5766 34.48 18 34.48C16.2799 34.48 14.6296 34.2528 13.079 33.8264C12.7776 33.7435 12.4571 33.767 12.171 33.8933L8.79679 35.3828C7.91415 35.7724 6.91779 35.1446 6.88821 34.1803L6.79564 31.156C6.78425 30.7836 6.61663 30.4352 6.33893 30.1868C3.03116 27.2287 1 22.9461 1 17.99ZM12.7854 14.8897L7.79161 22.8124C7.31238 23.5727 8.24695 24.4295 8.96291 23.8862L14.327 19.8152C14.6899 19.5398 15.1913 19.5384 15.5557 19.8116L19.5276 22.7905C20.7193 23.6845 22.4204 23.3706 23.2148 22.1103L28.2085 14.1875C28.6877 13.4272 27.7531 12.5704 27.0371 13.1137L21.673 17.1847C21.3102 17.4601 20.8088 17.4616 20.4444 17.1882L16.4726 14.2094C15.2807 13.3155 13.5797 13.6293 12.7854 14.8897Z">
+</path>
+</svg>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.copy-text-vouc').on('click', function() {
+                let text_value = $(this).parent().find('.id-vou').html().trim();
+                navigator.clipboard.writeText(text_value);
+            });
+            tippy('.copy-text-vouc', {
+                // default
+                trigger: 'click',
+                content: "Đã copy !",
+                placement: 'right',
+            });
+        })
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 colLeft">
+                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><img alt class="loading_lazy" data-ignore="true" height="77" src="https://cdn.upanh.info/storage/upload/images/LOGO-NICK-VN.png" width="207" /></span></span>
+                                    </p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#f1c40f">Chào Mừng Bạn Đến Với </span><a href="https://nick.vn/" rel="follow" target="_blank"><span style="color:#f1c40f">Nick.vn</span></a><br/>
+                                        <span style="color:#66ff00">* Shop mua bán nick </span><a href="" rel="follow"><span style="color:#66ff00">Liên Quân</span></a><span style="color:#66ff00">,&nbsp;Tốc chiến, Đột Kích, Roblox, FiFa, Ngọc Rồng, Liên Minh, Ninja School</span>
+                                        <span style="color:#66ff00">&nbsp;uy tín, </span><a href="" rel="follow" target="_blank"><span style="color:#66ff00">giá rẻ</span></a><span style="color:#66ff00">.<br/>
+* Làm nhiệm vụ, cày thuê tự động<br/>
+* Mua xu, Nạp kim cương, quân huy&nbsp;giá rẻ, chiết khấu cao</span></strong><br/> &nbsp;
+                                        <strong><span style="color:#ffffff">Thời Gian Làm Việc:</span> </strong>&nbsp;<span style="color:#66ff00"><strong>8h-12h</strong><strong> </strong></span>&nbsp;<span style="color:#ffffff"><strong>&amp; </strong></span>&nbsp;
+                                        <span style="color:#66ff00"><strong>13h30-22h</strong></span>
+                                        </span>
+                                        </span>
+                                    </p>
+                                    <a class="dmca-badge" href="https://images.dmca.com/Badges/_dmca_premi_badge_1.png?ID=6766daa6-8986-40c5-b282-a9c9e6a883de" title="DMCA.com Protection Status"><img alt="DMCA.com Protection Status" class="loading_lazy" data-ignore="true" src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=a76b2905-32bf-4460-8b80-2c5caa6b7ab7" /></a>
+                                </div>
+                                <div class="col-md-5 colRight">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="1">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p style="text-align:center"><img alt class="loading_lazy" data-ignore="true" height="60" src="https://cdn.upanh.info/storage/upload/images/gif.png" width="60" /></p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#f1c40f"><strong>2 năm</strong></span><br/>
+                                                        <span style="color:#2ecc71"><strong>Hoạt Động</strong></span></span>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><img alt class="loading_lazy" data-ignore="true" height="60" src="https://cdn.upanh.info/storage/upload/images/member (1).png" width="60" /></p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>&nbsp;<span style="color:#f1c40f">244.565</span></strong><br/>
+                                                        <span style="color:#2ecc71"><strong>Thành Viên</strong></span></span>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="text-align:center"><img alt class="loading_lazy" data-ignore="true" height="60" src="https://cdn.upanh.info/storage/upload/images/sale.png" width="60" /></p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#f1c40f"><strong>110.865</strong></span></span>
+                                                        </span>
+                                                    </p>
+                                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#2ecc71"><strong>Nick&nbsp;Đã Bán</strong></span></span>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><img alt class="loading_lazy" data-ignore="true" height="60" src="https://cdn.upanh.info/storage/upload/images/tang-truong.png" width="60" /></p>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#f1c40f"><strong>1.358.969</strong></span><br/>
+                                                        <span style="color:#2ecc71"><strong>Lượt Vào Shop</strong></span></span>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="text-align:center">&nbsp;</p>
+                                </div>
+                                <div class="col-md-3 colRight">
+                                    <p><span style="height:130px; vertical-align:bottom; width:340px"><span style="color:#f1c40f; font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px"><strong>Menu Shop Game</strong></span></span>
+                                        </span>
+                                    </p>
+                                    <ul>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Bán Acc Roblox</a></span></strong></li>
+                                        <li><a href=""><strong><span style="height:130px; vertical-align:bottom; width:340px">Nick Free Fire</span></strong></a></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Nick Ngọc Rồng Online </a></span></strong></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Nick Liên Quân</a></span></strong></li>
+                                        <li><a href=""><strong><span style="height:130px; vertical-align:bottom; width:340px">Nick Đột Kích</span></strong></a></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Nạp Kim Cương Free</a></span></strong></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Nạp Quân Huy Liên Quân </a></span></strong></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Mua Xu Ninja</a></span></strong></li>
+                                        <li><strong><span style="height:130px; vertical-align:bottom; width:340px"><a href="" rel="follow" target="_blank">Dịch vụ Robux 5 ngày </a></span></strong></li>
+                                        <li><strong>Dịch vụ Roblox uy tín <a href="" rel="follow">robuxviet</a></strong></li>
+                                    </ul>
+                                </div>
+                                <span style="height:130px; vertical-align:bottom; width:340px">
+<style type="text/css">.colLeft{padding: 15px;border: 1px solid #808080;background-color: #373535;border-radius: 5px;}
+                .colRight{padding:15px}
+                .colRight table{width:100%!important}
+                .colRight table tr{background-color:unset!important;color:#fff}
+                .colRight table tr td p{margin:0}
+</style>
+</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright mt-5 col-lg-12" style="border-top: 1px solid">
+                    <div class="row pt-4">
+                        <div class="col-lg-12 col-md-12 col-12 justify-content-center text-center" style="color: white;">
+                            © Copyright 2023 - <a style="color:white" href="" target="_blank">Privacy Policy</a> - <a style="color:white" target="_blank" href="https://kitio.net/tin-tuc/terms-of-service">Terms of Service</a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12 justify-content-center text-center mt-2" style="color:white">
+                            Operated by <a href="" target="_blank" class=" fweight-500" style="color:#32c5d2" id="footer_kitio">Kitio</a>, All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>

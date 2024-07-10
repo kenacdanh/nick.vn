@@ -1,0 +1,54 @@
+/* styles.css */
+
+.main-lay-out {
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-bottom: 40px;
+    background: #ffffff;
+}
+
+.content-banner-card {
+    flex-basis: 0%;
+}
+
+.content-banner-slide {
+    flex-basis: 100%;
+}
+
+header .nav-bar {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.content-items .container,
+.content-advertise .container,
+.content-video .container {
+    background-color: #ffffff;
+}
+
+.nav-log-in a:hover,
+.nav-regist a:hover {
+    background-color: #ffffff;
+    opacity: .8;
+}
+
+.content-video .container {
+    border: none;
+    /*border: 1px solid #cccccc;*/
+}
+
+.nav-bar-category .nav li a,
+.content-items .items-title h2,
+.game-list-description p,
+.oldPrice,
+.content-advertise .container marquee p {
+    color: #000000;
+}
+
+.nav-bar-category .nav li ul li a {
+    color: white;
+}
+
+.content-advertise .container {
+    border: 1px solid #000000;
+}
